@@ -100,58 +100,56 @@
     </div>
 </nav>
 
-<!-- HERO VIDEO - Plays Once + New Fallback Image -->
-<section class="relative bg-white py-8 overflow-hidden">
-    <div class="max-w-[80%] mx-auto">
+<!-- HERO VIDEO - Full Original Height + Balanced Width -->
+<section class="relative bg-white pt-8 pb-12 overflow-hidden">
+    <div class="w-full max-w-[92%] md:max-w-[85%] lg:max-w-[78%] mx-auto px-4">
         
-        <div class="relative rounded-3xl overflow-hidden shadow-2xl bg-white mx-auto">
-            
-            <!-- New Fallback Image -->
-            <div id="video-fallback"
-                 class="absolute inset-0 bg-cover bg-center z-10"
-                 style="background-image: url('./images/FALLBACK-IMAGE.jpg');">
-            </div>
-
+        <!-- Video Container -->
+        <div class="relative mx-auto rounded-3xl overflow-hidden shadow-2xl bg-black">
             <video
                 id="hero-video"
                 autoplay
                 muted
                 playsinline
                 preload="auto"
-                class="w-full max-w-full mx-auto block aspect-video relative z-20"
-                poster="./images/YOUR-NEW-FALLBACK-IMAGE.jpg">   <!-- Also update poster -->
+                class="w-full h-auto block mx-auto"
+                poster="./images/FALLBACK-IMAGE.jpg">
                 <source src="./videos/apple-view-old-manali-hero-video.mp4" type="video/mp4">
             </video>
 
             <!-- Unmute Button -->
             <button id="unmute-btn"
-                    class="absolute bottom-6 right-6 bg-black/70 hover:bg-black/90 text-white px-5 py-3 rounded-2xl text-sm font-medium flex items-center gap-2 transition-all duration-300 z-30">
+                    class="absolute bottom-6 right-6 bg-black/70 hover:bg-black/90 text-white px-5 py-3 rounded-2xl text-sm font-medium flex items-center gap-2 transition-all z-30">
                 <span id="volume-icon">🔇</span>
                 <span id="volume-text">Unmute Sound</span>
             </button>
         </div>
     </div>
 
-    <!-- Text Content (same as before) -->
-    <div class="max-w-4xl mx-auto text-center px-6 mt-12">
+    <!-- Text Content -->
+    <div class="max-w-4xl mx-auto text-center px-6 mt-10 md:mt-12">
+        <a href="https://maps.app.goo.gl/e22PoX5Qnnrd1EPw8" 
+           target="_blank"
+           class="inline-flex bg-red-100 text-red-700 hover:bg-red-200 px-6 py-3 rounded-3xl text-sm font-medium mb-6 transition-colors">
+            🍎 Old Manali • 800m from Manali Bus Station 📍
+        </a>
         
         <h1 class="heading-font text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
-            Best & most peaceful guesthouse in Manali!
+            Best Peaceful Quiet Guesthouse in Old Manali
         </h1>
         
         <p class="text-2xl md:text-3xl text-gray-700 mt-6">
-            Romantic getaways • Peaceful retreats • Himalayan adventure base
+            Romantic Getaways • Serene Retreats • Himalayan Adventure Base
         </p>
 
         <div class="mt-10 flex flex-wrap justify-center gap-6">
             <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white px-10 py-6 rounded-3xl text-2xl font-semibold transition-all">
-                BOOK YOUR STAY
+                Book Your Stay
             </a>
             <a href="https://maps.app.goo.gl/e22PoX5Qnnrd1EPw8" target="_blank" 
                class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-10 py-6 rounded-3xl text-2xl flex items-center gap-3 transition-all">
-                📍 FIND US on Google Maps
+                📍 Find Us on Google Maps
             </a>
-            
         </div>
     </div>
 </section>
@@ -270,6 +268,9 @@ document.addEventListener('DOMContentLoaded', () => {
     <section id="rooms" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="heading-font text-5xl text-center font-bold mb-12">Best Rooms for Romantic Breaks & Peaceful Stays</h2>
+            <p class="text-gray-600 leading-relaxed">
+                       We have 12 bedrooms in total - 8 bedrooms with onsuite bathroom &amp; 4 bedrooms with shared bathroom. All bathrooms have piping hot water.
+                    </p>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="group bg-white border rounded-3xl overflow-hidden hover:shadow-2xl transition-all">
                     <img src="./images/apple-view-old-manali-orchard-room.jpg" alt="Cedar Cottage" loading="lazy" class="w-full h-64 object-cover">
